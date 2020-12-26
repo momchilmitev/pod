@@ -102,6 +102,8 @@ body {
 }
 
 .input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: inline-block;
   width: 320px;
   height: 46px;
@@ -191,7 +193,7 @@ body {
   .input--submit {
     position: absolute;
     top: 5px;
-    right: 33%;
+    right: 33.5%;
     width: 162px;
   }
   .icons {
@@ -219,7 +221,7 @@ body {
   }
 }
 
-@media (min-device-width: 1200px) {
+@media (min-width: 1200px) {
   .logo {
     left: 165px;
     top: 102px;
@@ -268,7 +270,7 @@ body {
   .input--submit {
     position: absolute;
     top: 5px;
-    right: 37.5%;
+    right: 42%;
     width: 162px;
   }
   .icons {

@@ -94,6 +94,7 @@ body {
 }
 
 .input {
+  box-sizing: border-box;
   display: inline-block;
   width: 320px;
   height: 46px;
@@ -191,7 +192,7 @@ body {
     &--submit {
       position: absolute;
       top: 5px;
-      right: 33%;
+      right: 33.5%;
       width: 162px;
     }
   }
@@ -223,7 +224,7 @@ body {
 }
 
 // PC
-@media (min-device-width: 1200px) {
+@media (min-width: 1200px) {
   .logo {
     left: 165px;
     top: 102px;
@@ -279,7 +280,7 @@ body {
     &--submit {
       position: absolute;
       top: 5px;
-      right: 37.5%;
+      right: 42%;
       width: 162px;
     }
   }
