@@ -119,6 +119,7 @@ body {
 
     &:hover {
       background-color: $btn-hover-color;
+      cursor: pointer;
     }
   }
 }
@@ -216,5 +217,91 @@ body {
 }
 
 // PC
-@media (min-device-width: 1200px) and (max-device-width: 1600px) {
+@media (min-device-width: 1200px) {
+  .logo {
+    left: 165px;
+    top: 102px;
+    transform: translate(0);
+  }
+
+  .bg-image {
+    width: 888px;
+    height: 640px;
+    background-image: url("../assets/desktop/image-host.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 130px;
+    right: 0;
+  }
+
+  .content {
+    width: 723px;
+    height: 509px;
+    padding-top: 93px;
+    background-color: $bg-color;
+    left: 165px;
+    top: 261px;
+    text-align: left;
+  }
+
+  .title {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+  }
+
+  .description {
+    width: 445px;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 15px 0;
+  }
+
+  .send-form {
+    margin-top: 40px;
+    position: relative;
+  }
+
+  .input {
+    &--text {
+      width: 427px;
+      height: 56px;
+      border-radius: 28px;
+    }
+
+    &--submit {
+      position: absolute;
+      top: 5px;
+      right: 41%;
+      width: 162px;
+    }
+  }
+
+  .icons {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .icon:nth-child(n) {
+    margin: 0 25px;
+    width: 95px;
+    height: 25px;
+  }
+
+  .icon:nth-child(1) {
+    margin-left: 0;
+  }
+
+  .bg-pattern {
+    display: block;
+    position: absolute;
+    width: 232px;
+    height: 104px;
+    right: 0;
+    top: 718px;
+  }
 }
