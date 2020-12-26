@@ -108,10 +108,8 @@ body {
   &--text {
     background-color: $form-input-bg-color;
     margin-bottom: 15px;
-
-    &::placeholder {
-      padding-left: 30px;
-    }
+    color: #fff;
+    padding-left: 30px;
   }
 
   &--submit {
@@ -122,6 +120,14 @@ body {
       cursor: pointer;
     }
   }
+}
+
+.error {
+  display: none;
+  color: red;
+  position: absolute;
+  left: 30px;
+  margin: 0;
 }
 
 .bg-pattern {
@@ -273,7 +279,7 @@ body {
     &--submit {
       position: absolute;
       top: 5px;
-      right: 41%;
+      right: 37.5%;
       width: 162px;
     }
   }

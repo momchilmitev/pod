@@ -117,21 +117,7 @@ body {
 .input--text {
   background-color: #2c344b;
   margin-bottom: 15px;
-}
-
-.input--text::-webkit-input-placeholder {
-  padding-left: 30px;
-}
-
-.input--text:-ms-input-placeholder {
-  padding-left: 30px;
-}
-
-.input--text::-ms-input-placeholder {
-  padding-left: 30px;
-}
-
-.input--text::placeholder {
+  color: #fff;
   padding-left: 30px;
 }
 
@@ -142,6 +128,14 @@ body {
 .input--submit:hover {
   background-color: #ffffff;
   cursor: pointer;
+}
+
+.error {
+  display: none;
+  color: red;
+  position: absolute;
+  left: 30px;
+  margin: 0;
 }
 
 .bg-pattern {
@@ -274,7 +268,7 @@ body {
   .input--submit {
     position: absolute;
     top: 5px;
-    right: 41%;
+    right: 37.5%;
     width: 162px;
   }
   .icons {
