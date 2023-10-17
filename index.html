@@ -19,28 +19,28 @@
         podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and
         more!
       </p>
-      <section class="icons">
-        <img
-          src="./assets/images/spotify.svg"
-          alt="spotify icon"
-          class="icon"
-        />
-        <img
-          src="./assets/images/apple-podcast.svg"
-          alt="apple-podcast icon"
-          class="icon"
-        />
-        <img
-          src="./assets/images/google-podcasts.svg"
-          alt="google-podcasts icon"
-          class="icon"
-        />
-        <img
-          src="./assets/images/pocket-casts.svg"
-          alt="pocket-casts icon"
-          class="icon"
-        />
-      </section>
+      <ul class="icons" role="list" aria-label="Social podcasts icons">
+        <li aria-label="Spotify">
+          <svg class="icon" >
+            <use xlink:href="./assets/images/social-podcasts.svg#spotify"></use>
+          </svg>
+        </li>
+        <li aria-label="Apple podcast">
+          <svg class="icon" >
+            <use xlink:href="./assets/images/social-podcasts.svg#apple"></use>
+          </svg>
+        </li>
+        <li aria-label="Google podcast">
+          <svg class="icon" >
+            <use xlink:href="./assets/images/social-podcasts.svg#google"></use>
+          </svg>
+        </li>
+        <li aria-label="Pocket cast">
+          <svg class="icon" >
+            <use xlink:href="./assets/images/social-podcasts.svg#pocket"></use>
+          </svg>
+        </li>
+      </ul>
       <form class="send-form">
         <input
           type="text"

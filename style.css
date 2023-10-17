@@ -7,8 +7,7 @@ body {
   font-family: "Chivo", sans-serif;
   background-color: #121725;
   color: #fff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .bg-image {
@@ -21,14 +20,12 @@ body {
   position: absolute;
   top: 50px;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   z-index: 2;
 }
 
 .content {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-top: 150px;
   text-align: center;
   background-color: rgba(18, 23, 37, 0.9);
@@ -63,47 +60,17 @@ body {
 }
 
 .icons {
+  list-style: none;
+  padding: 0;
   width: 90%;
   margin: 45px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.icon {
-  display: block;
-  -webkit-filter: invert(38%) sepia(45%) saturate(292%) hue-rotate(186deg) brightness(95%) contrast(97%);
-          filter: invert(38%) sepia(45%) saturate(292%) hue-rotate(186deg) brightness(95%) contrast(97%);
-}
-
-.icon:nth-child(1) {
-  width: 50px;
-  height: 15px;
-}
-
-.icon:nth-child(2) {
-  width: 57px;
-  height: 17px;
-}
-
-.icon:nth-child(3) {
-  width: 75px;
-  height: 13px;
-}
-
-.icon:nth-child(4) {
-  width: 70px;
-  height: 15px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .input {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: inline-block;
   width: 320px;
   height: 46px;
@@ -148,8 +115,7 @@ body {
   .logo {
     top: 50px;
     left: 39px;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   .bg-image {
     width: 491px;
@@ -200,9 +166,7 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     margin: 0;
   }
   .icon:nth-child(n) {
@@ -225,8 +189,7 @@ body {
   .logo {
     left: 165px;
     top: 102px;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
   .bg-image {
     width: 888px;
@@ -277,9 +240,7 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     margin: 0;
   }
   .icon:nth-child(n) {
@@ -299,4 +260,3 @@ body {
     top: 718px;
   }
 }
-/*# sourceMappingURL=style.css.map */
