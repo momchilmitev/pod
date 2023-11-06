@@ -11,6 +11,7 @@
   --text-lg: calc(var(--base) * 1.625);
   --text-xl: calc(var(--base) * 3);
   --text-xxl: calc(var(--base) * 3.250);
+  --ff: "Chivo", sans-serif;
 }
 
 /* Reset */
@@ -49,7 +50,7 @@
 body {
   width: 100%;
   height: 100vh;
-  font-family: "Chivo", sans-serif;
+  font-family: var(--ff);
   background-color: #121725;
   background-image: url('./assets/images/image-host-mobile.jpg');
   color: #fff;
