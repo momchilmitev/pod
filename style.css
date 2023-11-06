@@ -12,6 +12,13 @@
   --text-xl: calc(var(--base) * 3);
   --text-xxl: calc(var(--base) * 3.250);
   --ff: "Chivo", sans-serif;
+  /* Colors */
+  --clr-primary: 224, 35%, 11%;
+  --clr-secondary: hsl(225, 40%, 83%);
+  --clr-input-bg: hsl(225, 26%, 23%);
+  --clr-accent: hsl(157, 74%, 62%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-error: hsl(0, 100%, 50%);
 }
 
 /* Reset */
@@ -51,23 +58,25 @@ body {
   width: 100%;
   height: 100vh;
   font-family: var(--ff);
-  background-color: #121725;
+  background-color: var(--clr-primary);
   background-image: url('./assets/images/image-host-mobile.jpg');
-  color: #fff;
+  color: var(--clr-white);
 }
 
 header {
+  --clr-primary-alpha: .9;
   padding: 0 24px;
   padding-top: 60px;
-  background-color: rgba(18, 23, 37, 0.9);
+  background-color: hsl(var(--clr-primary), var(--clr-primary-alpha));
   text-align: center;
   position: relative;
   z-index: 1;
 }
 
 .content {
+  --clr-primary-alpha: .9;
   text-align: center;
-  background-color: rgba(18, 23, 37, 0.9);
+  background-color: hsl(var(--clr-primary), var(--clr-primary-alpha));
   padding: 0 24px;
   padding-top: 60px;
   height: calc(100% - 120px);
@@ -77,17 +86,17 @@ header {
   text-transform: uppercase;
   font-weight: 300;
   line-height: 38px;
-  color: #54e6af;
+  color: var(--clr-accent);
 }
 
 .title > span {
-  color: #fff;
+  color: var(--clr-white);
 }
 
 .description {
   padding-top: 16px;
   line-height: 25px;
-  color: #c2cbe5;
+  color: var(--clr-secondary);
 }
 
 .icons {
@@ -118,24 +127,24 @@ header {
 }
 
 .input--text {
-  background-color: #2c344b;
+  background-color: var(--clr-input-bg);
   margin-bottom: 15px;
-  color: #fff;
+  color: var(--clr-white);
   padding-left: 30px;
 }
 
 .input--submit {
-  background-color: #54e6af;
+  background-color: var(--clr-accent);;
 }
 
 .input--submit:hover {
-  background-color: #ffffff;
+  background-color: var(--clr-white);
   cursor: pointer;
 }
 
 .error {
   display: none;
-  color: red;
+  color: var(--clr-error);
   position: absolute;
   left: 30px;
   margin: 0;
