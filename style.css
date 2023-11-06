@@ -1,9 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap");
 
+:root {
+  /* Typography */
+  /* 14px, 15px, 18px, 26px, 48px, 52px */
+  --base: 1rem;
+  --scale: 1.5rem;
+  --text-xs: calc(var(--base) * 0.875);
+  --text-sm: calc(var(--base) * 0.9375);
+  --text-md: calc(var(--base) * 1.125);
+  --text-lg: calc(var(--base) * 1.625);
+  --text-xl: calc(var(--base) * 3);
+  --text-xxl: calc(var(--base) * 3.250);
+}
+
+/* Reset */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* Utils */
+.text-xs {
+  font-size: var(--text-xs);
+}
+
+.text-sm {
+  font-size: var(--text-sm);
+}
+
+.text-md {
+  font-size: var(--text-md);
+}
+
+.text-lg {
+  font-size: var(--text-lg);
+}
+
+.text-xl {
+  font-size: var(--text-xl);
+}
+
+.text-xxl {
+  font-size: var(--text-xxl);
 }
 
 body {
@@ -34,7 +74,6 @@ header {
 
 .title {
   text-transform: uppercase;
-  font-size: 26px;
   font-weight: 300;
   line-height: 38px;
   color: #54e6af;
@@ -48,7 +87,6 @@ header {
   padding-top: 16px;
   line-height: 25px;
   color: #c2cbe5;
-  font-size: 15px;
 }
 
 .icons {
